@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "PublicRequestsApi.Api.Controllers.RequestsController",
+    "Method": "Get",
+    "RelativePath": "api/Requests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PublicRequestsApi.Api.Controllers.RequestsController",
+    "Method": "Post",
+    "RelativePath": "api/Requests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PublicRequestsApi.Application.DTOs.RequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

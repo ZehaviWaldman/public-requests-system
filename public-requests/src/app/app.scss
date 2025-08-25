@@ -1,0 +1,14 @@
+body {
+  font-family: 'Heebo', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #e3f0ff 0%, #f5f7fa 100%);
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100svh; // תומך גם במובייל
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  direction: rtl;
+  position: fixed;
+  inset: 0;
+  overflow: auto;
+}

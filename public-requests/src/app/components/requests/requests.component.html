@@ -1,0 +1,20 @@
+<header class="header">
+  <div class="logo">📌 פניות ציבור</div> <button class="menu-btn" (click)="toggleMenu()" aria-label="תפריט">
+    <span></span> <span></span> <span></span> </button>
+  <nav [class.open]="menuOpen">
+    <ul>
+      <li [class.active]="activeTab === 'form'" (click)="activeTab = 'form'; closeMenu()">הוספת פנייה</li>
+      <li [class.active]="activeTab === 'list'" (click)="activeTab = 'list'; closeMenu()">פניות קיימות</li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section *ngIf="activeTab === 'form'" class="tab-content">
+  <app-request-form (addRequest)="addRequestFromChild($event)"></app-request-form>
+  </section>
+
+  <section *ngIf="activeTab === 'list'" class="tab-content">
+  <app-request-list [requests]="requests" [displayedColumns]="displayedColumns"></app-request-list>
+  </section>
+</main>

@@ -1,0 +1,282 @@
+.submit-btn.disabled-btn {
+
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.7;
+}
+.form-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1976d2;
+    margin-bottom: 1.5rem;
+}
+
+.request-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 500px;
+       margin: 1.2rem auto; // פחות מרווח עליון ותחתון
+    padding: 1.2rem 1rem; // פחות גובה פנימי
+
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(25, 118, 210, 0.08);
+    direction: rtl;
+
+    .form-group {
+        width: 100%;
+        max-width: 480px; // שדה לא יתפשט מדי
+        margin: 0.3rem auto; // פחות מרווח בין שדות
+        padding: 0 12px; // שוליים אחידים שמאל-ימין
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 0.4rem 12px; // פחות גובה לאינפוטים
+        box-sizing: border-box;
+    }
+
+    .submit-btn {
+        display: block;
+        margin: 0.7rem auto 0 auto; // פחות מרווח לכפתור
+        min-width: 180px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        background: #1976d2;
+        color: #fff;
+        border-radius: 8px;
+        padding: 0.5rem 0; // פחות גובה לכפתור
+        border: none;
+        cursor: pointer;
+        transition: background 0.2s;
+
+        &:hover {
+            background: #1565c0;
+        }
+    }
+}
+
+/* רספונסיביות */
+@media (max-width: 700px) {
+    .request-form {
+        padding: 0.8rem 0.3rem;
+        margin: 0.7rem auto;
+
+        .form-group {
+            padding: 0 8px;
+            max-width: 100%;
+            margin: 0.2rem auto;
+        }
+
+        input,
+        textarea {
+            padding: 0.3rem 8px;
+        }
+
+        .submit-btn {
+            min-width: 100px;
+            font-size: 0.95rem;
+            padding: 0.35rem 0;
+        }
+    }
+    }
+
+@media (max-width: 500px) {
+    .request-form {
+        padding: 1rem 0.3rem;
+
+        .form-group {
+            padding: 0 8px;
+            max-width: 100%;
+        }
+
+        input,
+        textarea {
+            padding: 0.35rem 8px;
+        }
+
+        .submit-btn {
+            font-size: 0.95rem;
+            padding: 0.4rem 0;
+            min-width: 90px;
+        }
+    }
+}
+
+.requests-list {
+    background: #fff;
+    padding: 2rem 1rem;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(25, 118, 210, 0.08);
+    max-width: 900px;
+    margin: 2rem auto;
+    direction: rtl;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+            padding: 0.75rem;
+            text-align: right;
+            border-bottom: 1px solid #eee;
+            font-size: 1rem;
+        }
+
+        th {
+            background: #1976d2;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+    }
+
+    .empty-list {
+        text-align: center;
+        color: #1976d2;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1976d2;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+    direction: rtl;
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .menu-btn {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        span {
+            display: block;
+            height: 4px;
+            width: 28px;
+            background: #fff;
+            margin: 4px 0;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+    }
+
+    nav {
+        ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                cursor: pointer;
+                padding: 0.5rem 1rem;
+                border-radius: 8px;
+                transition: background 0.2s;
+
+                &.active,
+                &:hover {
+                    background: #ff4081;
+                    color: #fff;
+                }
+            }
+        }
+
+        &.open {
+            display: block;
+        }
+    }
+}
+
+/* רספונסיביות */
+@media (max-width: 900px) {
+    .requests-list {
+        max-width: 100%;
+        padding: 1rem 0.5rem;
+
+        table th,
+        table td {
+            font-size: 0.95rem;
+            padding: 0.5rem;
+        }
+    }
+
+}
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: row;
+
+        .logo {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background: #1976d2;
+            width: 100vw;
+
+            ul {
+                flex-direction: column;
+                gap: 0;
+
+                li {
+                    padding: 1rem 2rem;
+                    border-radius: 0;
+                }
+            }
+
+            display: none;
+
+            &.open {
+                display: block;
+            }
+        }
+
+        .menu-btn {
+            display: flex;
+        }
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .header {
+        padding: 0.5rem 0.5rem;
+
+        .logo {
+            font-size: 1rem;
+        }
+    }
+
+}

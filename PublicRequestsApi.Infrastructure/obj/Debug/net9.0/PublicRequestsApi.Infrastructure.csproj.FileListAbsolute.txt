@@ -1,0 +1,12 @@
+C:\Users\valdman\source\repos\PublicRequestsApi.Infrastructure\bin\Debug\net9.0\PublicRequestsApi.Infrastructure.deps.json
+C:\Users\valdman\source\repos\PublicRequestsApi.Infrastructure\bin\Debug\net9.0\PublicRequestsApi.Infrastructure.dll
+C:\Users\valdman\source\repos\PublicRequestsApi.Infrastructure\bin\Debug\net9.0\PublicRequestsApi.Infrastructure.pdb
+C:\Users\valdman\source\repos\PublicRequestsApi.Infrastructure\obj\Debug\net9.0\PublicRequestsApi.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\valdman\source\repos\PublicRequestsApi.Infrastructure\obj\Debug\net9.0\PublicRequestsApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valdman\source\repos\PublicRequestsApi.Infrastructure\obj\Debug\net9.0\PublicRequestsApi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\valdman\source\repos\PublicRequestsApi.Infrastructure\obj\Debug\net9.0\PublicRequestsApi.Infrastructure.AssemblyInfo.cs
+C:\Users\valdman\source\repos\PublicRequestsApi.Infrastructure\obj\Debug\net9.0\PublicRequestsApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\valdman\source\repos\PublicRequestsApi.Infrastructure\obj\Debug\net9.0\PublicRequestsApi.Infrastructure.dll
+C:\Users\valdman\source\repos\PublicRequestsApi.Infrastructure\obj\Debug\net9.0\refint\PublicRequestsApi.Infrastructure.dll
+C:\Users\valdman\source\repos\PublicRequestsApi.Infrastructure\obj\Debug\net9.0\PublicRequestsApi.Infrastructure.pdb
+C:\Users\valdman\source\repos\PublicRequestsApi.Infrastructure\obj\Debug\net9.0\ref\PublicRequestsApi.Infrastructure.dll

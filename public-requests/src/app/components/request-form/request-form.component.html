@@ -1,0 +1,30 @@
+<form [formGroup]="requestForm" (ngSubmit)="submitForm()" class="request-form" dir="rtl">
+  <h2 class="form-title">פנייה חדשה</h2>
+  <mat-form-field class="form-group" appearance="outline" style="width: 100%;">
+    <mat-label>שם הפונה</mat-label>
+    <input matInput formControlName="name" placeholder="שם הפונה" required>
+    <mat-error *ngIf="requestForm.get('name')?.hasError('required') && requestForm.get('name')?.touched">
+      חובה למלא שם
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field class="form-group" appearance="outline" style="width: 100%;">
+    <mat-label>נושא</mat-label>
+    <input matInput formControlName="subject" placeholder="נושא" required minlength="5">
+    <mat-error *ngIf="requestForm.get('subject')?.hasError('required') && requestForm.get('subject')?.touched">
+      חובה למלא נושא
+    </mat-error>
+    <mat-error *ngIf="requestForm.get('subject')?.hasError('minlength') && requestForm.get('subject')?.touched">
+      נושא חייב לכלול לפחות 5 תווים
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field class="form-group" appearance="outline" style="width: 100%;">
+    <mat-label>תוכן הפנייה</mat-label>
+    <textarea matInput formControlName="content" placeholder="תוכן הפנייה"></textarea>
+  </mat-form-field>
+  <div>
+    <button mat-raised-button color="primary" type="submit" class="submit-btn" [disabled]="requestForm.invalid"
+      [ngClass]="{'disabled-btn': requestForm.invalid}">
+      הוסף פנייה
+    </button>
+  </div>
+</form>
