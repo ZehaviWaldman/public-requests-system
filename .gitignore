@@ -1,0 +1,17 @@
+﻿# Ignore server and client build files
+server/bin/
+server/obj/
+client/node_modules/
+client/dist/
+
+# IDEs
+.vscode/
+.idea/
+.vs/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
