@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using PublicRequestsApi.Infrastructure;
 using PublicRequestsApi.Application.Services;
-using PublicRequestsApi.Application.Repositories;
 using PublicRequestsApi.Infrastructure.Repositories;
+using PublicRequestsApi.Application.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
